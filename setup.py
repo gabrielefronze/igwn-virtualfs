@@ -16,7 +16,7 @@ def getLinkPathByPeriod(base, exp, channel, period, name):
 
 def ln(source, dest):
     bashCommand = f"ln -s {source} {dest}"
-    # print(bashCommand)
+    print(bashCommand)
     process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
     output, error = process.communicate()
 
@@ -45,11 +45,13 @@ def initFrames():
                                     source, name = link.split(" -> ")
                                     dest = getLinkPathByExp(framesBasePath, exp, channelName, periodName, name)
                                     print(dest)
-                                    makedirs(dest)
+                                    if not path.exists(path.dirname(dest)):
+                                        makedirs(path.dirname(dest))
                                     ln(source, dest)
                                     dest = getLinkPathByPeriod(framesBasePath, exp, channelName, periodName, name)
                                     print(dest)
-                                    makedirs(dest)
+                                    if not path.exists(path.dirname(dest)):
+                                        makedirs(path.dirname(dest))
                                     ln(source, dest)
     return
 
