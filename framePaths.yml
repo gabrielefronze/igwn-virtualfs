@@ -1,0 +1,78 @@
+virgo:
+  - V1:
+    - ER8: none
+    - ER10: none
+    - ER14:
+      - /cvmfs/ligo.osgstorage.org/frames/ER14/V1Online -> V1Online
+    - O1: none
+    - O2:
+      - /cvmfs/ligo.osgstorage.org/frames/O2/V1O2Repro1A -> V1O2Repro1A
+      - /cvmfs/ligo.osgstorage.org/frames/O2/V1O2Repro2A -> V1O2Repro2A
+    - O3:
+      - /cvmfs/ligo.osgstorage.org/frames/O3/V1O2Repro1A -> V1O2Repro1A
+      - /cvmfs/ligo.osgstorage.org/frames/O3/V1Online -> V1Online
+    - S6: none
+    - postO1: none
+ligo:
+  - H1:
+    - ER8:
+      - /cvmfs/ligo.osgstorage.org/frames/ER8/hoft/H1 -> hoft
+      - /cvmfs/ligo.osgstorage.org/frames/ER8/hoft_C01/H1 -> hoft_C01
+      - /cvmfs/ligo.osgstorage.org/frames/ER8/hoft_C02/H1 -> hoft_C02
+    - ER10:
+      - /cvmfs/ligo.osgstorage.org/frames/ER10/H1_HOFT_C00 -> hoft_C00
+      - /cvmfs/ligo.osgstorage.org/frames/ER10/hoft/H1 -> hoft
+      - /cvmfs/ligo.osgstorage.org/frames/ER10/hoft_C01/H1 -> hoft_C01
+    - ER14:
+      - /cvmfs/ligo.osgstorage.org/frames/ER10/hoft/H1 -> hoft
+    - O1:
+      - /cvmfs/ligo.osgstorage.org/frames/O1/hoft/H1 -> hoft
+      - /cvmfs/ligo.osgstorage.org/frames/O1/hoft_C01/H1 -> hoft_C01
+      - /cvmfs/ligo.osgstorage.org/frames/O1/hoft_C01_4kHz/H1 -> hoft_C01_4kHz
+      - /cvmfs/ligo.osgstorage.org/frames/O1/hoft_C02/H1 -> hoft_C02
+    - O2:
+      - /cvmfs/ligo.osgstorage.org/frames/O2/hoft/H1 -> hoft
+      - /cvmfs/ligo.osgstorage.org/frames/O2/hoft_C01/H1 -> hoft_C01
+      - /cvmfs/ligo.osgstorage.org/frames/O2/hoft_C02/H1 -> hoft_C02
+      - /cvmfs/ligo.osgstorage.org/frames/O2/hoft_C02_clean/H1 -> hoft_C02_clean
+    - O3:
+      - /cvmfs/ligo.osgstorage.org/frames/O3/hoft/H1 -> hoft
+      - /cvmfs/ligo.osgstorage.org/frames/O3/hoft_C01/H1 -> hoft_C01
+      - /cvmfs/ligo.osgstorage.org/frames/O3/hoft_C01_clean_sub60Hz/H1 -> hoft_C01_clean_sub60Hz
+    - S6:
+      - /cvmfs/ligo.osgstorage.org/frames/S6/H1_LDAS_C02_L2/H -> LDAS_C02_L2
+      - /cvmfs/ligo.osgstorage.org/frames/S6/LDAShoftC02/LHO -> LDAS_hoft_C02
+    - postO1:
+      - /cvmfs/ligo.osgstorage.org/frames/postO1/H1_HOFT_C00/H -> hoft_C00
+      - /cvmfs/ligo.osgstorage.org/frames/postO1/hoft/H1 -> hoft
+  - L1:
+    - ER8:
+      - /cvmfs/ligo.osgstorage.org/frames/ER8/hoft/L1 -> hoft
+      - /cvmfs/ligo.osgstorage.org/frames/ER8/hoft_C01/L1 -> hoft_C01
+      - /cvmfs/ligo.osgstorage.org/frames/ER8/hoft_C02/L1 -> hoft_C02
+    - ER10:
+      - /cvmfs/ligo.osgstorage.org/frames/ER10/L1_HOFT_C00 -> hoft_C00
+      - /cvmfs/ligo.osgstorage.org/frames/ER10/hoft/L1 -> hoft
+      - /cvmfs/ligo.osgstorage.org/frames/ER10/hoft_C01/L1 -> hoft_C01
+    - ER14:
+      - /cvmfs/ligo.osgstorage.org/frames/ER10/hoft/L1 -> hoft
+    - O1:
+      - /cvmfs/ligo.osgstorage.org/frames/O1/hoft/L1 -> hoft
+      - /cvmfs/ligo.osgstorage.org/frames/O1/hoft_C01/L1 -> hoft_C01
+      - /cvmfs/ligo.osgstorage.org/frames/O1/hoft_C01_4kHz/L1 -> hoft_C01_4kHz
+      - /cvmfs/ligo.osgstorage.org/frames/O1/hoft_C02/L1 -> hoft_C02
+    - O2:
+      - /cvmfs/ligo.osgstorage.org/frames/O2/hoft/L1 -> hoft
+      - /cvmfs/ligo.osgstorage.org/frames/O2/hoft_C01/L1 -> hoft_C01
+      - /cvmfs/ligo.osgstorage.org/frames/O2/hoft_C02/L1 -> hoft_C02
+      - /cvmfs/ligo.osgstorage.org/frames/O2/hoft_C02_clean/L1 -> hoft_C02_clean
+    - O3:
+      - /cvmfs/ligo.osgstorage.org/frames/O3/hoft/L1 -> hoft
+      - /cvmfs/ligo.osgstorage.org/frames/O3/hoft_C01/L1 -> hoft_C01
+      - /cvmfs/ligo.osgstorage.org/frames/O3/hoft_C01_clean_sub60Hz/L1 -> hoft_C01_clean_sub60Hz
+    - S6:
+      - /cvmfs/ligo.osgstorage.org/frames/S6/L1_LDAS_C02_L2/L -> LDAS_C02_L2
+      - /cvmfs/ligo.osgstorage.org/frames/S6/LDAShoftC02/LLO -> LDAS_hoft_C02
+    - postO1:
+      - /cvmfs/ligo.osgstorage.org/frames/postO1/L1_HOFT_C00/L -> hoft_C00
+      - /cvmfs/ligo.osgstorage.org/frames/postO1/hoft/L1 -> hoft
