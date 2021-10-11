@@ -44,12 +44,12 @@ def initFrames():
                                     # print(link)
                                     source, name = link.split(" -> ")
                                     dest = getLinkPathByExp(framesBasePath, exp, channelName, periodName, name)
-                                    print(dest)
+                                    # print(dest)
                                     if not path.exists(path.dirname(dest)):
                                         makedirs(path.dirname(dest))
                                     ln(source, dest)
                                     dest = getLinkPathByPeriod(framesBasePath, exp, channelName, periodName, name)
-                                    print(dest)
+                                    # print(dest)
                                     if not path.exists(path.dirname(dest)):
                                         makedirs(path.dirname(dest))
                                     ln(source, dest)
