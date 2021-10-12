@@ -3,7 +3,8 @@ from typing import List
 import yaml
 import subprocess
 
-basePath = path.dirname(__file__)
+filePath = path.dirname(__file__)
+basePath = path.join(filePath, "igwnfs")
 framesConfigFileName = "framePaths.yml"
 
 
@@ -26,17 +27,22 @@ def createLink(source, dest):
     if not path.exists(path.dirname(dest)):
         makedirs(path.dirname(dest))
 
-    remove(dest)
+    if path.exists(dest):
+        remove(dest)
+
     ln(source, dest)
 
 
 def initFrames():
     framesBasePath = path.join(basePath, "frames")
 
+    if not path.isdir(basePath):
+        mkdir(basePath)
+
     if not path.isdir(framesBasePath):
         mkdir(framesBasePath)
 
-    with open(path.join(basePath, framesConfigFileName)) as framesConfigFile:
+    with open(path.join(filePath, framesConfigFileName)) as framesConfigFile:
         config = yaml.load(framesConfigFile, Loader=yaml.FullLoader)
         for exp, channels in config.items():
             for channel in channels:
@@ -77,6 +83,9 @@ def initFrames():
 
 
 def init():
+    if not path.exists(basePath):
+        makedirs(basePath)
+
     initFrames()
     return
 
